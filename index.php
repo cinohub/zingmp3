@@ -10,7 +10,7 @@ error_reporting(0);
 function gettoken()
 {
 	$acc = array(
-	array("zid.kaiaozonpecazinih447","gaochanhkieu.vn"),
+	// array("zid.kaiaozonpecazinih447","gaochanhkieu.vn"),
 	array("gocmobile.pro","gocmobile123")
 	);
 	
