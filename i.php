@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit']))
 {
-    echo "string";
+    echo $_POST['submit']);
 }
 ?>
