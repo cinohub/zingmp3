@@ -13,7 +13,8 @@ if(isset($_POST['submit']))
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, '?fromvn=true&requestdata={"token":"'.$token.'"}');
     $page = curl_exec($ch);
-    echo  curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+    $result =   curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+    echo json_encode($result);
     curl_close($ch);
 }else{
     echo "error token";
