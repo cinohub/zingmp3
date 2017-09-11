@@ -11,6 +11,7 @@ if(isset($_POST['submit']))
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
     curl_setopt($ch, CURLOPT_TIMEOUT, 1);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
+    curl_setopt($ch, CURLOPT_PROXY, "222.255.122.58:3128");
     curl_setopt($ch, CURLOPT_POSTFIELDS, '?fromvn=true&requestdata={"token":"'.$token.'"}');
     $page = curl_exec($ch);
     $result =   curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
@@ -41,7 +42,7 @@ function gettoken()
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST,false);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
+curl_setopt($ch, CURLOPT_PROXY, "222.255.122.58:3128");
     $page = curl_exec($ch);
     curl_close($ch);
 
