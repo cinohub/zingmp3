@@ -25,7 +25,7 @@ if(isset($_POST['submit']))
     }
     else
     {
-        echo "Lỗi cmnr: Không tìm thấy ID bài hát! Link phải có dạng: http://mp3.zing.vn/bai-hat/Ghen-Khac-Hung-ERIK-MIN/ZW7FC0I7.html";
+        echo "Lỗi : Không tìm thấy ID bài hát! Link phải có dạng: http://mp3.zing.vn/bai-hat/Ghen-Khac-Hung-ERIK-MIN/ZW7FC0I7.html";
     }
 }
 
