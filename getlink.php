@@ -15,7 +15,7 @@ if(isset($_POST['submit']))
            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST,false);
            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-           curl_setopt($ch, CURLOPT_PROXY, "222.255.122.58:3128");
+           // curl_setopt($ch, CURLOPT_PROXY, "222.255.122.58:3128");
            $page = curl_exec($ch);
            curl_close($ch);
 
