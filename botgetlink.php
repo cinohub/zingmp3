@@ -47,9 +47,9 @@ function getLinkZing($url)
 }
 function getLinkNCT($url)
 {
- $link128 = "http://htstar.design/nctgetlink.php?q=128&link=".$url;
- $link320 = "http://htstar.design/nctgetlink.php?q=320&link=".$url;
- $linklossless = "http://htstar.design/nctgetlink.php?q=lossless&link=".$url;
+ $link128 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=128&link=".$url;
+ $link320 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=320&link=".$url;
+ $linklossless = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=lossless&link=".$url;
  $jsonData = array(
   'link128' =>$link128,
   'link320' =>$link320,
