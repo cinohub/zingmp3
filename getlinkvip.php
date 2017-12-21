@@ -68,7 +68,7 @@ function getLinkNCT($url)
           \"buttons\": [        
             {
               \"type\": \"web_url\",
-              \"url\": "." \"https://rockets.chatfuel.com\" ".",
+              \"url\": ". $linklossless .",
               \"title\": \"Visit Website\"
             }
            
