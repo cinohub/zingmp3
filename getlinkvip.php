@@ -146,8 +146,8 @@ if(isset($_GET['submit']))
     // echo $host;
     if($host === 'mp3.zing.vn'){
       $response = getLinkZing($url);
-    }else if($host === 'www.nhaccuatui.com'){
-     $response = getLinkNCT($url);
+    }else if($host === 'nhaccuatui.com' ){
+     $response = getLinkNCT(str_replace("http://nhaccuatui.com", "https://www.nhaccuatui.com", $url));
    }else if($host === 'www.fshare.vn'){
      $response = getLinkFshare($url);
    }else if($host === 'javhd.com'){
