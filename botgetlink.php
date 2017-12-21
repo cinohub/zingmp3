@@ -1,6 +1,6 @@
 <?php
 /**
-* ssss
+* 
 */
 header('Content-Type: text/html; charset=utf-8');
 class Response {
@@ -47,6 +47,7 @@ function getLinkZing($url)
 }
 function getLinkNCT($url)
 {
+	$url = str_replace("http://nhaccuatui.com/", "https://www.nhaccuatui.com/", $url);
  $link128 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=128&link=".$url;
  $link320 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=320&link=".$url;
  $linklossless = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=lossless&link=".$url;
@@ -56,7 +57,13 @@ function getLinkNCT($url)
   'linklossless' =>$linklossless
   );
  $response = new Response($jsonData,200,"success");
- return $response;
+ $strRespose = "{
+ "messages": [
+   {"text": "Welcome to the Chatfuel Rockets!"},
+   {"text": "What are you up to?"}
+ ]
+}"
+ return $strRespose;
 }
 
 function getLinkFshare($url)
@@ -144,6 +151,6 @@ if(isset($_GET['submit']))
 }else{
   $response = new Response(null,404,"URL không hợp lệ");
 }
-echo $response->toJSON();
+echo $response;
 }
 
