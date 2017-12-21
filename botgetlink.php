@@ -57,10 +57,9 @@ function getLinkNCT($url)
   'linklossless' =>$linklossless
   );
  $response = new Response($jsonData,200,"success");
- $strRespose = "{
- "messages": [
-   {"text": "Welcome to the Chatfuel Rockets!"},
-   {"text": "What are you up to?"}
+ $strRespose = "{\"messages\": [
+   {\"text\": \"Welcome to the Chatfuel Rockets!\"},
+   {\"text\": \"What are you up to?\"}
  ]
 }"
  return $strRespose;
