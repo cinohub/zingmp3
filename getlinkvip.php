@@ -79,7 +79,7 @@ function getLinkNCT($url)
               \"type\": \"web_url\",
               \"url\": \"%s\",
               \"title\": \"Lossless\"
-            },
+            }
           ]
         }
       }
