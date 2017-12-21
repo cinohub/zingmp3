@@ -63,7 +63,7 @@ function getLinkNCT($url)
         \"type\": \"template\",
         \"payload\": {
           \"template_type\": \"button\",
-          \"text\": \"Link download : !\",
+          \"text\": \"Link download : \",
           \"buttons\": [        
             {
               \"type\": \"web_url\",
@@ -175,6 +175,6 @@ if(isset($_GET['submit']))
 }else{
   $response = new Response(null,404,"URL không hợp lệ");
 }
-echo $url;
+echo $response;
 }
 
