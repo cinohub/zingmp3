@@ -175,6 +175,6 @@ if(isset($_GET['submit']))
 }else{
   $response = new Response(null,404,"URL không hợp lệ");
 }
-echo $response;
+echo $url;
 }
 
