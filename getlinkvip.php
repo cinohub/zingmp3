@@ -47,10 +47,9 @@ function getLinkZing($url)
 }
 function getLinkNCT($url)
 {
-	$url1 = str_replace("http://nhaccuatui.com/", "https://www.nhaccuatui.com/", $url);
- $link128 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=128&link=".$url1;
- $link320 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=320&link=".$url1;
- $linklossless = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=lossless&link=".$url1;
+ $link128 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=128&link=".$url;
+ $link320 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=320&link=".$url;
+ $linklossless = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=lossless&link=".$url;
  $jsonData = array(
   'link128' =>$link128,
   'link320' =>$link320,
@@ -64,21 +63,30 @@ function getLinkNCT($url)
         \"type\": \"template\",
         \"payload\": {
           \"template_type\": \"button\",
-          \"text\": \"Hello!\",
+          \"text\": \"Link download : !\",
           \"buttons\": [        
             {
               \"type\": \"web_url\",
               \"url\": \"%s\",
-              \"title\": \"Visit Website\"
-            }
-           
+              \"title\": \"128Kpbs\"
+            },
+            {
+              \"type\": \"web_url\",
+              \"url\": \"%s\",
+              \"title\": \"320Kpbs\"
+            },
+             {
+              \"type\": \"web_url\",
+              \"url\": \"%s\",
+              \"title\": \"Lossless\"
+            },
           ]
         }
       }
     }
   ]
 }";
- return sprintf($strRespose, $url1);
+ return sprintf($strRespose, $link128,$link320,$linklossless);
 }
 
 function getLinkFshare($url)
