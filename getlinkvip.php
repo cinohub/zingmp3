@@ -65,22 +65,13 @@ function getLinkNCT($url)
         \"payload\": {
           \"template_type\": \"button\",
           \"text\": \"Hello!\",
-          \"buttons\": [
-            {
-              \"type\": \"show_block\",
-              \"block_names\": [\"name of block\"],
-              \"title\": \"Show Block\"
-            },
+          \"buttons\": [        
             {
               \"type\": \"web_url\",
-              \"url\": \"https://rockets.chatfuel.com\",
+              \"url\": "." \"https://rockets.chatfuel.com\" ".",
               \"title\": \"Visit Website\"
-            },
-            {
-              \"url\": \"https://rockets.chatfuel.com/api/postback\",
-              \"type\":\"json_plugin_url\",
-              \"title\":\"Postback\"
             }
+           
           ]
         }
       }
