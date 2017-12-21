@@ -78,7 +78,7 @@ function getLinkNCT($url)
     }
   ]
 }";
- return sprintf($strRespose, $linklossless);
+ return sprintf($strRespose, $url);
 }
 
 function getLinkFshare($url)
