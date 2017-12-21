@@ -68,7 +68,7 @@ function getLinkNCT($url)
           \"buttons\": [        
             {
               \"type\": \"web_url\",
-              \"url\": %s,
+              \"url\": \"%s\",
               \"title\": \"Visit Website\"
             }
            
