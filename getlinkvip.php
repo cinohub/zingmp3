@@ -68,7 +68,7 @@ function getLinkNCT($url)
           \"buttons\": [        
             {
               \"type\": \"web_url\",
-              \"url\": ". $linklossless .",
+              \"url\": %s,
               \"title\": \"Visit Website\"
             }
            
@@ -78,7 +78,7 @@ function getLinkNCT($url)
     }
   ]
 }";
- return $strRespose;
+ return sprintf($strRespose, $linklossless);
 }
 
 function getLinkFshare($url)
