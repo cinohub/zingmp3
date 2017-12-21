@@ -47,7 +47,8 @@ function getLinkZing($url)
 }
 function getLinkNCT($url)
 {
-	$url = str_replace("http://nhaccuatui.com/", "https://www.nhaccuatui.com/", urldecode($url));
+	$url = str_replace("http://nhaccuatui.com/", "https://www.nhaccuatui.com/", $url);
+  echo $url;
  $link128 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=128&link=".$url;
  $link320 = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=320&link=".$url;
  $linklossless = "https://starlabs.ml/ALL_In_One_plugins/nctgetlink.php?q=lossless&link=".$url;
