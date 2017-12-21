@@ -61,7 +61,7 @@ function getLinkNCT($url)
    {\"text\": \"Welcome to the Chatfuel Rockets!\"},
    {\"text\": \"What are you up to?\"}
  ]
-}"
+}";
  return $strRespose;
 }
 
