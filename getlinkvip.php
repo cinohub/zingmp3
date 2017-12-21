@@ -73,11 +73,11 @@ function getLinkNCT($url)
             },
             {
               \"type\": \"web_url\",
-              \"url\": \"https://rockets.chatfuel.com\",
+              \"url\":". $link320.",
               \"title\": \"Visit Website\"
             },
             {
-              \"url\": \"https://rockets.chatfuel.com/api/postback\",
+              \"url\": ". $linklossless.",
               \"type\":\"json_plugin_url\",
               \"title\":\"Postback\"
             }
